@@ -1,3 +1,20 @@
+import { useQuery } from 'react-query';
+import { getTableData } from './apis/api';
+import { Table } from './components/table';
+
 export function App() {
-  return <div>스위치원</div>;
+  const { data } = useQuery('getTableData', getTableData, {
+    refetchInterval: 5000,
+    suspense: true,
+  });
+
+  if (!data) {
+    return null;
+  }
+
+  return (
+    <div>
+      <Table />
+    </div>
+  );
 }
