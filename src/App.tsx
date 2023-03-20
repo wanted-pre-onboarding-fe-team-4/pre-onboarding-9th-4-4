@@ -14,7 +14,7 @@ export function App() {
 
   return (
     <div>
-      <Table data={data} />
+      <Table />
     </div>
   );
 }
