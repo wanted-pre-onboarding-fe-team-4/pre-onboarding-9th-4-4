@@ -1,6 +1,7 @@
 import { useQuery } from 'react-query';
 import { getTableData } from './apis/api';
 import { Table } from './components/table';
+import { MainLayout } from './layout/MainLayout';
 
 export function App() {
   const { data } = useQuery('getTableData', getTableData, {
@@ -13,8 +14,8 @@ export function App() {
   }
 
   return (
-    <div>
+    <MainLayout>
       <Table />
-    </div>
+    </MainLayout>
   );
 }
