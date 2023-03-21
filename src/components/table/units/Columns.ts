@@ -18,6 +18,19 @@ export const COLUMNS: ColumnsType<ITableData> = [
     dataIndex: 'status',
     key: 'status',
     render: StatusRenderer,
+    filters: [
+      {
+        text: '완료',
+        value: true,
+      },
+      {
+        text: '미완료',
+        value: false,
+      },
+    ],
+    filterMode: 'tree',
+    filterSearch: true,
+    onFilter: (value: string | number | boolean, record: ITableData) => record.status === value,
   },
   {
     title: '고객번호',
