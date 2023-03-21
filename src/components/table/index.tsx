@@ -14,17 +14,15 @@ export const MainTable = () => {
   const filteredData = data?.filter((record) => todayFilter(record));
 
   return (
-    <>
-      <Table
-        columns={COLUMNS}
-        dataSource={filteredData}
-        pagination={{
-          pageSize: 50,
-          defaultPageSize: 50,
-          pageSizeOptions: [],
-          position: ['topLeft'],
-        }}
-      />
-    </>
+    <Table
+      columns={COLUMNS}
+      dataSource={filteredData}
+      pagination={{
+        pageSize: 50,
+        defaultPageSize: 50,
+        pageSizeOptions: [],
+        position: ['topLeft'],
+      }}
+    />
   );
 };
