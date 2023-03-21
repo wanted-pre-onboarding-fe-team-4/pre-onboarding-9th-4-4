@@ -15,6 +15,7 @@ export function MainLayout({ children }: Props) {
   return (
     <Layout style={{ minHeight: '100vh' }}>
       <Sider
+        width='15rem'
         style={{
           background: '#fff',
         }}
@@ -22,11 +23,12 @@ export function MainLayout({ children }: Props) {
         collapsed={collapsed}
         onCollapse={(value) => setCollapsed(value)}
       >
-        <div
+        <img
+          src={collapsed ? '/logo-small.png' : '/logo.png'}
+          alt='logo'
           style={{
             height: 32,
             margin: 16,
-            background: 'rgba(0, 0, 0, 0.2)',
           }}
         />
         <Menu theme='light' defaultSelectedKeys={['/']}>
