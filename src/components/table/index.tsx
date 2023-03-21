@@ -15,6 +15,7 @@ export const MainTable = () => {
 
   return (
     <Table
+      scroll={{ y: 'calc(100vh - 250px)' }}
       columns={COLUMNS}
       dataSource={filteredData}
       pagination={{
