@@ -21,6 +21,7 @@ export const COLUMNS: ColumnsType<ITableData> = [
     key: 'status',
     render: StatusRenderer,
     ...filterOptionObject
+
   },
   {
     title: '고객번호',
