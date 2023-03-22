@@ -20,9 +20,9 @@ export const MainTable = () => {
       dataSource={filteredData}
       rowKey='id'
       pagination={{
+        showSizeChanger: false,
         pageSize: 50,
         defaultPageSize: 50,
-        pageSizeOptions: [],
         position: ['topLeft'],
       }}
     />
