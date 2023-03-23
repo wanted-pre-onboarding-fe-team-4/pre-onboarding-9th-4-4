@@ -33,8 +33,19 @@
   # 모듈 설치 및 실행
    yarn && yarn dev
   ```
-  
+<img width="1797" alt="스크린샷 2023-03-23 오후 2 59 22" src="https://user-images.githubusercontent.com/88178866/227117427-64b1a6c8-b3d6-45c7-92c5-26ca1a819281.png">
+
 ## 기능 구현
+
+
+
+https://user-images.githubusercontent.com/88178866/227117587-d6aabaf7-875c-4ef3-b7c8-32c21207e4a3.mov
+
+
+
+
+
+
 
 
 
@@ -46,6 +57,8 @@
     - 주문 목록은 페이지네이션이 구현되어야 합니다(한 페이지에 50건의 주문이 보여야 합니다)
     - 데이터 중에서 오늘의 거래건만 보여지도록 해주세요
       - 여기서 오늘은 “2023-03-08”일을 의미합니다.
+      
+https://user-images.githubusercontent.com/88178866/227117621-f07af593-8cfb-45b7-a1fa-8f89882b6a78.mov
 
 #### ✅ Assignment 2
 
@@ -56,6 +69,8 @@
 #### ✅ Assignment 3
 
 - 주문 처리 상태에 따라 filtering 기능을 구현해주세요
+
+https://user-images.githubusercontent.com/88178866/227117637-b5803a19-e801-4018-a881-1f8a168a8ad6.mov
 
 #### ✅ Assignment 4
 
