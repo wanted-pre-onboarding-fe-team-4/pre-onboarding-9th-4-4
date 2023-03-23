@@ -138,7 +138,7 @@ const { data } = useQuery('getTableData', getTableData, {
 
 ### 4. 테이블 컴포넌트 분리
 
-- antd 라이브러리 특성 상 코드가 길어지는 경우가 많아서 적절하게 코드를 수정하였습니다.
+- antd 라이브러리 특성 상 코드가 길어지는 경우가 많아서 적절하게 분리하였습니다.
 ```
 📂 table
 ├── 📄 index.tsx // 테이블 최상위 컴포넌트
